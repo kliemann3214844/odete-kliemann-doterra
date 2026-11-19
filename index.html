@@ -1,0 +1,1954 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odete Kliemann · Consultora Independente doTERRA</title>
+    <meta
+      name="description"
+      content="Venha empreender comigo na doTERRA neste Natal. Óleos essenciais puros, renda extra trabalhando de casa e acompanhamento passo a passo."
+    />
+    <meta property="og:title" content="Odete Kliemann · Consultora Independente doTERRA" />
+    <meta
+      property="og:description"
+      content="Venha empreender comigo na doTERRA. Você não vai começar sozinha: eu te acompanho em cada passo."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      :root {
+        --pink-primary: #e91e8c;
+        --pink-primary-dark: #c41474;
+        --pink-soft: #ffd6ea;
+        --pink-blush: #fff6fa;
+        --pink-card: #ffffff;
+        --pine-green: #185c37;
+        --pine-dark: #114328;
+        --whatsapp-green: #16a34a;
+        --whatsapp-green-hover: #15803d;
+        --christmas-red: #b91c1c;
+        --gold: #c99738;
+        --gold-light: #f3d98b;
+        --text-heading: #2d1422;
+        --text-body: #4d2c3e;
+        --text-muted: #764d63;
+        --border-rose: rgba(233, 30, 140, 0.16);
+        --shadow-soft: 0 12px 32px -12px rgba(136, 20, 82, 0.14);
+        --shadow-card: 0 10px 26px -14px rgba(136, 20, 82, 0.16);
+        --radius-lg: 22px;
+        --radius-md: 16px;
+        --container-max: 720px;
+        --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+        color: var(--text-body);
+        background-color: var(--pink-blush);
+        background-image:
+          radial-gradient(circle at 12% 8%, rgba(255, 214, 234, 0.72) 0%, transparent 42%),
+          radial-gradient(circle at 88% 22%, rgba(255, 214, 234, 0.55) 0%, transparent 40%),
+          radial-gradient(circle at 50% 92%, rgba(243, 217, 139, 0.18) 0%, transparent 46%);
+        line-height: 1.6;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      /* Camada de flocos de neve suaves (atrás dos cards para máxima legibilidade) */
+      .snow-layer {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .snowflake {
+        position: absolute;
+        top: -2.5rem;
+        user-select: none;
+        will-change: transform, opacity;
+        animation-name: snowfall;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes snowfall {
+        0% {
+          transform: translate3d(0, -10vh, 0) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: var(--flake-opacity, 0.55);
+        }
+        85% {
+          opacity: var(--flake-opacity, 0.55);
+        }
+        100% {
+          transform: translate3d(var(--flake-drift, 28px), 108vh, 0) rotate(220deg);
+          opacity: 0;
+        }
+      }
+
+      /* Guirlanda natalina no topo */
+      .top-garland-wrap {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(180deg, rgba(255, 214, 234, 0.85) 0%, rgba(255, 246, 250, 0) 100%);
+        padding-top: 0;
+      }
+
+      .top-garland-svg {
+        display: block;
+        width: 100%;
+        min-width: 720px;
+        max-width: 1440px;
+        height: 68px;
+        margin: 0 auto;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--container-max);
+        margin-inline: auto;
+        padding-inline: 20px;
+      }
+
+      /* 1. Cabeçalho */
+      .hero-header {
+        position: relative;
+        z-index: 2;
+        padding: 8px 0 24px;
+        text-align: center;
+      }
+
+      .header-card {
+        position: relative;
+        background: linear-gradient(180deg, #ffffff 0%, #fff8fc 100%);
+        border: 1px solid var(--border-rose);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 34px 24px 32px;
+        overflow: hidden;
+      }
+
+      .header-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, transparent 0%, var(--gold) 20%, var(--pink-primary) 50%, var(--gold) 80%, transparent 100%);
+      }
+
+      .avatar-frame {
+        position: relative;
+        width: 124px;
+        height: 124px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        padding: 4px;
+        background: linear-gradient(135deg, #b88324 0%, #f5df94 35%, #c99738 68%, #f8e8ad 100%);
+        box-shadow: 0 10px 24px rgba(184, 131, 36, 0.25);
+      }
+
+      .avatar-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid #ffffff;
+        overflow: hidden;
+        background: linear-gradient(135deg, var(--pink-soft), #fff0f7);
+        position: relative;
+      }
+
+      .avatar-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+      }
+
+      .img-fallback {
+        display: none;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 12px;
+        color: var(--pink-primary-dark);
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .avatar-inner.is-broken .img-fallback,
+      .invite-photo-inner.is-broken .img-fallback {
+        display: flex;
+      }
+
+      .consultant-name {
+        margin: 0 0 8px;
+        font-size: clamp(1.75rem, 4vw, 2.35rem);
+        line-height: 1.15;
+        font-weight: 700;
+        color: var(--text-heading);
+        letter-spacing: -0.02em;
+      }
+
+      .consultant-seal {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 auto 14px;
+        padding: 6px 14px;
+        border: 1px solid rgba(201, 151, 56, 0.55);
+        border-radius: 8px;
+        background: linear-gradient(180deg, rgba(255, 214, 234, 0.45) 0%, rgba(255, 255, 255, 0.95) 100%);
+        color: var(--pine-dark);
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .consultant-seal-dot {
+        color: var(--christmas-red);
+        font-size: 0.95rem;
+      }
+
+      .hero-phrase {
+        max-width: 560px;
+        margin: 0 auto 24px;
+        font-size: 1.05rem;
+        color: var(--text-body);
+        text-wrap: balance;
+      }
+
+      /* Botões de WhatsApp */
+      .btn-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 48px;
+        padding: 13px 26px;
+        border-radius: 12px;
+        background: linear-gradient(180deg, #1fb455 0%, var(--whatsapp-green) 100%);
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 10px 22px -8px rgba(22, 163, 74, 0.55);
+        transition: transform 0.18s var(--ease-smooth), background 0.18s ease, box-shadow 0.18s ease;
+        white-space: nowrap;
+      }
+
+      .btn-whatsapp:hover {
+        background: linear-gradient(180deg, #199e49 0%, var(--whatsapp-green-hover) 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 14px 26px -8px rgba(21, 128, 61, 0.6);
+      }
+
+      .btn-whatsapp:focus-visible {
+        outline: 3px solid var(--pink-primary);
+        outline-offset: 3px;
+      }
+
+      .btn-whatsapp svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+
+      /* Seções */
+      main {
+        position: relative;
+        z-index: 2;
+      }
+
+      .section {
+        padding: 20px 0 32px;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      .section-kicker {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--pink-primary-dark);
+        letter-spacing: 0.04em;
+      }
+
+      .section-title {
+        margin: 0;
+        font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+        line-height: 1.22;
+        font-weight: 700;
+        color: var(--text-heading);
+        text-wrap: balance;
+      }
+
+      /* 2. Seção Convite */
+      .invite-panel {
+        background: var(--pink-card);
+        border: 1px solid var(--border-rose);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 24px;
+      }
+
+      .invite-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        align-items: center;
+      }
+
+      .invite-photo-wrap {
+        position: relative;
+        padding-top: 10px;
+      }
+
+      .invite-photo-inner {
+        position: relative;
+        border-radius: 18px;
+        overflow: hidden;
+        border: 4px solid #ffffff;
+        box-shadow: 0 14px 30px -12px rgba(45, 20, 34, 0.25), 0 0 0 2px rgba(201, 151, 56, 0.45);
+        aspect-ratio: 1 / 1;
+        background: linear-gradient(135deg, var(--pink-soft), #fff8fc);
+      }
+
+      .invite-photo-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 18%;
+      }
+
+      .bow-ornament {
+        position: absolute;
+        top: -6px;
+        right: 14px;
+        z-index: 3;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 58px;
+        filter: drop-shadow(0 6px 10px rgba(185, 28, 28, 0.28));
+        pointer-events: none;
+        animation: gentle-sway 4.2s ease-in-out infinite;
+      }
+
+      @keyframes gentle-sway {
+        0%,
+        100% {
+          transform: rotate(-3deg);
+        }
+        50% {
+          transform: rotate(3deg);
+        }
+      }
+
+      .invite-content {
+        text-align: left;
+      }
+
+      .invite-title {
+        margin: 0 0 14px;
+        font-size: clamp(1.55rem, 3vw, 2.05rem);
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--pink-primary-dark);
+        text-wrap: balance;
+      }
+
+      .invite-lead {
+        margin: 0 0 14px;
+        font-size: 1.05rem;
+        color: var(--text-body);
+      }
+
+      .invite-promise {
+        margin: 0 0 18px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, rgba(255, 214, 234, 0.52) 0%, rgba(255, 246, 250, 0.95) 100%);
+        border: 1px solid rgba(233, 30, 140, 0.22);
+        color: var(--text-heading);
+        font-weight: 600;
+        font-size: 1.02rem;
+      }
+
+      .invite-note {
+        margin: 0 0 24px;
+        font-size: 0.97rem;
+        color: var(--text-muted);
+      }
+
+      .invite-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+      }
+
+      /* 3. Benefícios (4 cards) */
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .benefit-card {
+        background: var(--pink-card);
+        border: 1px solid var(--border-rose);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-card);
+        padding: 24px 22px;
+        transition: transform 0.22s var(--ease-smooth), border-color 0.22s ease;
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(233, 30, 140, 0.36);
+      }
+
+      .benefit-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, var(--pink-soft) 0%, #fff0f7 100%);
+        border: 1px solid rgba(201, 151, 56, 0.35);
+        font-size: 1.5rem;
+        margin-bottom: 14px;
+      }
+
+      .benefit-title {
+        margin: 0 0 8px;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--text-heading);
+      }
+
+      .benefit-text {
+        margin: 0;
+        font-size: 0.96rem;
+        color: var(--text-body);
+      }
+
+      /* 4. Como começar? (3 passos) */
+      .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .step-card {
+        position: relative;
+        background: linear-gradient(180deg, #ffffff 0%, #fff9fc 100%);
+        border: 1px solid var(--border-rose);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-card);
+        padding: 24px 22px;
+      }
+
+      .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--pink-primary) 0%, #c41474 100%);
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.05rem;
+        font-variant-numeric: tabular-nums;
+        border: 2px solid var(--gold-light);
+        box-shadow: 0 6px 14px -4px rgba(233, 30, 140, 0.4);
+        margin-bottom: 14px;
+      }
+
+      .step-title {
+        margin: 0 0 8px;
+        font-size: 1.12rem;
+        font-weight: 700;
+        color: var(--text-heading);
+      }
+
+      .step-text {
+        margin: 0;
+        font-size: 0.95rem;
+        color: var(--text-body);
+      }
+
+      /* 4.5 Depoimentos de clientes e equipe (carrossel responsivo) */
+      .testimonials-carousel {
+        --cards-per-view: 1;
+        --card-gap: 20px;
+        position: relative;
+      }
+
+      .testimonials-viewport {
+        overflow: hidden;
+        padding: 6px 2px 12px;
+      }
+
+      .testimonials-track {
+        display: flex;
+        gap: var(--card-gap);
+        transition: transform 0.42s var(--ease-smooth);
+        will-change: transform;
+      }
+
+      .testimonial-card {
+        flex: 0 0 calc((100% - (var(--cards-per-view) - 1) * var(--card-gap)) / var(--cards-per-view));
+        background: var(--pink-card);
+        border: 1px solid var(--border-rose);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-card);
+        padding: 24px 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .testimonial-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .testimonial-avatar-wrap {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        padding: 2px;
+        background: linear-gradient(135deg, #c99738, #f3d98b, #e91e8c);
+        flex-shrink: 0;
+      }
+
+      .testimonial-avatar-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        overflow: hidden;
+        background: var(--pink-soft);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .testimonial-avatar-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+      }
+
+      .testimonial-avatar-inner .img-fallback {
+        font-size: 0.95rem;
+        padding: 0;
+      }
+
+      .testimonial-avatar-inner.is-broken .img-fallback {
+        display: flex;
+      }
+
+      .testimonial-author {
+        min-width: 0;
+      }
+
+      .testimonial-name {
+        margin: 0 0 2px;
+        font-size: 1.02rem;
+        font-weight: 700;
+        color: var(--text-heading);
+      }
+
+      .testimonial-role {
+        margin: 0;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+      }
+
+      .testimonial-stars {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        color: #d4a238;
+      }
+
+      .testimonial-stars svg {
+        width: 17px;
+        height: 17px;
+        display: block;
+      }
+
+      .testimonial-quote {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--text-body);
+        flex-grow: 1;
+      }
+
+      .carousel-controls {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .carousel-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid rgba(233, 30, 140, 0.25);
+        background: #ffffff;
+        color: var(--pink-primary-dark);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 6px 14px -8px rgba(136, 20, 82, 0.28);
+        transition: transform 0.16s var(--ease-smooth), background 0.16s ease, border-color 0.16s ease;
+      }
+
+      .carousel-btn:hover:not(:disabled) {
+        background: #fff3f8;
+        border-color: var(--pink-primary);
+        transform: translateY(-1px);
+      }
+
+      .carousel-btn:disabled {
+        opacity: 0.42;
+        cursor: not-allowed;
+      }
+
+      .carousel-btn:focus-visible,
+      .carousel-dot:focus-visible {
+        outline: 3px solid var(--pink-primary);
+        outline-offset: 2px;
+      }
+
+      .carousel-dots {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .carousel-dot {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: 0;
+        border-radius: 999px;
+        background: rgba(233, 30, 140, 0.24);
+        cursor: pointer;
+        transition: width 0.2s var(--ease-smooth), background 0.2s ease;
+      }
+
+      .carousel-dot.is-active {
+        width: 26px;
+        background: var(--pink-primary);
+      }
+
+      /* 4.6 Dúvidas Frequentes (Acordeão) */
+      .faq-list {
+        max-width: 840px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .faq-item {
+        background: var(--pink-card);
+        border: 1px solid var(--border-rose);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-card);
+        overflow: hidden;
+        transition: border-color 0.2s ease;
+      }
+
+      .faq-item.is-open {
+        border-color: rgba(233, 30, 140, 0.36);
+      }
+
+      .faq-trigger {
+        width: 100%;
+        min-height: 54px;
+        padding: 16px 20px;
+        background: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        text-align: left;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text-heading);
+        cursor: pointer;
+        transition: background 0.16s ease, color 0.16s ease;
+      }
+
+      .faq-trigger:hover {
+        background: #fff7fb;
+        color: var(--pink-primary-dark);
+      }
+
+      .faq-trigger:focus-visible {
+        outline: 3px solid var(--pink-primary);
+        outline-offset: -3px;
+      }
+
+      .faq-chevron {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        color: var(--pink-primary-dark);
+        transition: transform 0.22s var(--ease-smooth);
+      }
+
+      .faq-trigger[aria-expanded="true"] .faq-chevron {
+        transform: rotate(180deg);
+      }
+
+      .faq-panel {
+        padding: 0 20px 18px;
+        font-size: 0.96rem;
+        line-height: 1.6;
+        color: var(--text-body);
+      }
+
+      .faq-panel[hidden] {
+        display: none;
+      }
+
+      /* 4.7 Referências em vídeo */
+      .videos-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .video-card {
+        background: var(--pink-card);
+        border: 1px solid var(--border-rose);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-card);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .video-frame {
+        position: relative;
+        aspect-ratio: 16 / 9;
+        background: #170b12;
+        overflow: hidden;
+      }
+
+      .video-frame video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #170b12;
+      }
+
+      .video-caption {
+        padding: 18px 20px 20px;
+      }
+
+      .video-title {
+        margin: 0 0 6px;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--text-heading);
+      }
+
+      .video-quote {
+        margin: 0;
+        font-size: 0.94rem;
+        color: var(--text-body);
+      }
+
+      /* 5. Bloco de Contato */
+      .contact-panel {
+        text-align: center;
+        background: linear-gradient(135deg, #ffffff 0%, #ffeaf4 100%);
+        border: 1.5px solid rgba(201, 151, 56, 0.45);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 36px 24px;
+      }
+
+      .contact-holiday-row {
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+      }
+
+      .contact-title {
+        margin: 0 0 10px;
+        font-size: clamp(1.4rem, 3vw, 1.85rem);
+        font-weight: 700;
+        color: var(--text-heading);
+      }
+
+      .contact-subtitle {
+        max-width: 480px;
+        margin: 0 auto 18px;
+        font-size: 1rem;
+        color: var(--text-body);
+      }
+
+      .contact-phone-display {
+        display: inline-block;
+        margin: 0 auto 22px;
+        padding: 10px 22px;
+        border-radius: 14px;
+        background: #ffffff;
+        border: 1px solid rgba(233, 30, 140, 0.25);
+        color: var(--pink-primary-dark);
+        font-size: clamp(1.45rem, 4vw, 2rem);
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* 6. Rodapé (Instagram apenas ícone + texto, NÃO clicável) */
+      .site-footer {
+        position: relative;
+        z-index: 10;
+        margin-top: 12px;
+        padding: 32px 20px 44px;
+        border-top: 1px solid rgba(233, 30, 140, 0.16);
+        background: linear-gradient(180deg, rgba(255, 214, 234, 0.28) 0%, rgba(255, 214, 234, 0.55) 100%);
+        text-align: center;
+      }
+
+      .footer-instagram-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 18px;
+        border-radius: 14px;
+        background: #ffffff;
+        border: 1px solid rgba(233, 30, 140, 0.18);
+        color: var(--text-heading);
+        margin-bottom: 14px;
+        user-select: text;
+        cursor: default;
+      }
+
+      .footer-instagram-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        display: block;
+      }
+
+      .footer-instagram-text {
+        font-size: 0.98rem;
+        font-weight: 600;
+        color: var(--text-heading);
+      }
+
+      .footer-signature {
+        margin: 0;
+        font-size: 0.92rem;
+        color: var(--text-muted);
+      }
+
+      .footer-signature strong {
+        color: var(--pink-primary-dark);
+        font-weight: 700;
+      }
+
+      .footer-zip-wrap {
+        margin-top: 18px;
+      }
+
+      .footer-zip-download {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 44px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(233, 30, 140, 0.28);
+        background: #ffffff;
+        color: var(--pink-primary-dark);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 6px 14px -8px rgba(136, 20, 82, 0.24);
+        transition: transform 0.18s var(--ease-smooth), background 0.18s ease, border-color 0.18s ease;
+      }
+
+      .footer-zip-download:hover {
+        background: #fff4f9;
+        border-color: var(--pink-primary);
+        transform: translateY(-1px);
+      }
+
+      .footer-zip-download:focus-visible {
+        outline: 3px solid var(--pink-primary);
+        outline-offset: 2px;
+      }
+
+      /* Animação suave de entrada */
+      .reveal {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: opacity 0.55s var(--ease-smooth), transform 0.55s var(--ease-smooth);
+      }
+
+      .reveal.is-hidden {
+        opacity: 0;
+        transform: translate3d(0, 16px, 0);
+      }
+
+      /* Tablet */
+      @media (min-width: 640px) {
+        .testimonials-carousel {
+          --cards-per-view: 2;
+        }
+
+        .benefits-grid,
+        .videos-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 20px;
+        }
+
+        .header-card {
+          padding: 44px 40px 40px;
+        }
+
+        .invite-panel {
+          padding: 34px;
+        }
+      }
+
+      /* Desktop 1024px+ */
+      @media (min-width: 1024px) {
+        :root {
+          --container-max: 1120px;
+        }
+
+        .testimonials-carousel {
+          --cards-per-view: 3;
+        }
+
+        .top-garland-svg {
+          height: 82px;
+        }
+
+        .hero-header {
+          padding: 10px 0 28px;
+        }
+
+        .header-card {
+          padding: 46px 56px 42px;
+        }
+
+        .avatar-frame {
+          width: 158px;
+          height: 158px;
+          padding: 5px;
+          margin-bottom: 20px;
+        }
+
+        .invite-panel {
+          padding: 42px;
+        }
+
+        .invite-grid {
+          grid-template-columns: 1fr 1.12fr;
+          gap: 44px;
+        }
+
+        .steps-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+        }
+
+        .section {
+          padding: 24px 0 42px;
+        }
+
+        .contact-panel {
+          padding: 48px 40px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        .snowflake,
+        .bow-ornament {
+          animation: none !important;
+        }
+
+        .reveal,
+        .btn-whatsapp,
+        .benefit-card,
+        .testimonials-track,
+        .carousel-btn,
+        .carousel-dot {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="snow-layer" id="snow-layer" aria-hidden="true"></div>
+
+    <!-- Guirlanda natalina no topo -->
+    <div class="top-garland-wrap" aria-hidden="true">
+      <svg class="top-garland-svg" viewBox="0 0 1200 82" preserveAspectRatio="xMidYMin slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pine-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#114328" />
+            <stop offset="100%" stop-color="#22794a" />
+          </linearGradient>
+        </defs>
+        <!-- Ramos de pinheiro em arco duplo -->
+        <path d="M-20 8 Q 140 58, 300 20 Q 450 60, 600 18 Q 750 60, 900 20 Q 1060 58, 1220 8" stroke="#114328" stroke-width="18" stroke-linecap="round" />
+        <path d="M-20 8 Q 140 58, 300 20 Q 450 60, 600 18 Q 750 60, 900 20 Q 1060 58, 1220 8" stroke="url(#pine-grad)" stroke-width="12" stroke-linecap="round" stroke-dasharray="6 9" />
+        <path d="M-20 14 Q 140 66, 300 25 Q 450 68, 600 23 Q 750 68, 900 25 Q 1060 66, 1220 14" stroke="#2a8c57" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 11" opacity="0.85" />
+        <!-- Fio dourado delicado -->
+        <path d="M0 16 Q 150 66, 300 26 Q 450 68, 600 24 Q 750 68, 900 26 Q 1050 66, 1200 16" stroke="#d8aa4c" stroke-width="1.8" stroke-dasharray="4 7" opacity="0.9" />
+        <!-- Folhas de azevinho & adornos natalinos -->
+        <g>
+          <ellipse cx="145" cy="39" rx="11" ry="5" transform="rotate(-24 145 39)" fill="#185c37" />
+          <ellipse cx="163" cy="39" rx="11" ry="5" transform="rotate(24 163 39)" fill="#1f7044" />
+          <circle cx="154" cy="41" r="6.5" fill="#b91c1c" />
+          <circle cx="152" cy="39" r="2" fill="#fca5a5" opacity="0.7" />
+          <circle cx="228" cy="40" r="6" fill="#e91e8c" />
+          <circle cx="300" cy="22" r="8" fill="#d8aa4c" />
+          <circle cx="300" cy="22" r="3.5" fill="#fff3c4" />
+
+          <ellipse cx="442" cy="41" rx="11" ry="5" transform="rotate(-22 442 41)" fill="#185c37" />
+          <ellipse cx="460" cy="41" rx="11" ry="5" transform="rotate(22 460 41)" fill="#1f7044" />
+          <circle cx="451" cy="42" r="6.5" fill="#b91c1c" />
+          <circle cx="525" cy="36" r="5.5" fill="#e91e8c" />
+
+          <!-- Laço central na guirlanda -->
+          <path d="M600 22 C586 10, 574 14, 578 24 C581 30, 591 28, 600 22 Z" fill="#b91c1c" stroke="#f3d98b" stroke-width="1.3" />
+          <path d="M600 22 C614 10, 626 14, 622 24 C619 30, 609 28, 600 22 Z" fill="#b91c1c" stroke="#f3d98b" stroke-width="1.3" />
+          <path d="M597 24 L590 42 L597 38 L600 26 Z" fill="#991b1b" />
+          <path d="M603 24 L610 42 L603 38 L600 26 Z" fill="#991b1b" />
+          <circle cx="600" cy="22" r="4.8" fill="#e91e8c" stroke="#f3d98b" stroke-width="1.5" />
+
+          <circle cx="675" cy="36" r="5.5" fill="#e91e8c" />
+          <ellipse cx="740" cy="41" rx="11" ry="5" transform="rotate(-22 740 41)" fill="#185c37" />
+          <ellipse cx="758" cy="41" rx="11" ry="5" transform="rotate(22 758 41)" fill="#1f7044" />
+          <circle cx="749" cy="42" r="6.5" fill="#b91c1c" />
+
+          <circle cx="900" cy="22" r="8" fill="#d8aa4c" />
+          <circle cx="900" cy="22" r="3.5" fill="#fff3c4" />
+          <circle cx="972" cy="40" r="6" fill="#e91e8c" />
+          <ellipse cx="1037" cy="39" rx="11" ry="5" transform="rotate(-24 1037 39)" fill="#185c37" />
+          <ellipse cx="1055" cy="39" rx="11" ry="5" transform="rotate(24 1055 39)" fill="#1f7044" />
+          <circle cx="1046" cy="41" r="6.5" fill="#b91c1c" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- 1. Cabeçalho -->
+    <header class="hero-header">
+      <div class="container">
+        <div class="header-card">
+          <div class="avatar-frame">
+            <div class="avatar-inner" id="avatar-wrap">
+              <img
+                id="profile-photo"
+                src="./assets/aistudio/509171015_17871135657379371_8738767895161975833_n_18c81bdc.jpg"
+                alt="Foto de perfil da consultora independente doTERRA Odete Kliemann"
+                referrerpolicy="no-referrer"
+              />
+              <div class="img-fallback" aria-hidden="true">
+                <span>🌿</span>
+                <span data-consultant-name>Odete Kliemann</span>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="consultant-name" data-consultant-name>Odete Kliemann</h1>
+
+          <div class="consultant-seal">
+            <span class="consultant-seal-dot" aria-hidden="true">🎄</span>
+            <span>Consultora doTERRA</span>
+          </div>
+
+          <p class="hero-phrase">
+            Cuidando do bem-estar da sua família com óleos essenciais puros e guiando mulheres a construírem uma nova renda com leveza neste Natal.
+          </p>
+
+          <a
+            id="whatsapp-header-btn"
+            class="btn-whatsapp"
+            href="https://wa.me/5543986703070"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-wa-section="header"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.07c-.24.68-1.41 1.3-1.95 1.38-.49.07-1.11.1-1.79-.12-.41-.13-.95-.31-1.63-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38.01.55.02.18.01.41-.07.65.49.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.69-.17 1.37z" />
+            </svg>
+            <span>Conversar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. Seção "Venha empreender comigo na doTERRA" -->
+      <section class="section reveal" id="empreender" aria-labelledby="titulo-empreender">
+        <div class="container">
+          <div class="invite-panel">
+            <div class="invite-grid">
+              <div class="invite-photo-wrap">
+                <div class="bow-ornament" aria-hidden="true" title="Laço natalino">
+                  <svg viewBox="0 0 64 64" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 30 C18 16, 4 18, 8 30 C11 38, 22 36, 32 30 Z" fill="#b91c1c" stroke="#f3d98b" stroke-width="1.8" />
+                    <path d="M32 30 C46 16, 60 18, 56 30 C53 38, 42 36, 32 30 Z" fill="#b91c1c" stroke="#f3d98b" stroke-width="1.8" />
+                    <path d="M29 33 L18 54 L26 49 L31 35 Z" fill="#991b1b" stroke="#f3d98b" stroke-width="1.2" />
+                    <path d="M35 33 L46 54 L38 49 L33 35 Z" fill="#991b1b" stroke="#f3d98b" stroke-width="1.2" />
+                    <circle cx="32" cy="30" r="6" fill="#e91e8c" stroke="#f3d98b" stroke-width="2" />
+                  </svg>
+                </div>
+                <div class="invite-photo-inner" id="invite-photo-wrap">
+                  <img
+                    id="main-invite-photo"
+                    src="./assets/aistudio/b3944394-d2c0-4c89-8821-516beded26a6_3b5c6201.jfif"
+                    alt="Consultora doTERRA Odete Kliemann apresentando óleo essencial Lavender em seu escritório"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="img-fallback" aria-hidden="true">
+                    <span style="font-size: 2rem;">🎀 🎄</span>
+                    <span>Óleos Essenciais &amp; Recomeço</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="invite-content">
+                <span class="section-kicker">🎀 Convite especial de Natal</span>
+                <h2 class="invite-title" id="titulo-empreender">Venha empreender comigo na doTERRA</h2>
+                <p class="invite-lead">
+                  Este fim de ano pode ser o seu momento de recomeço. Se você busca mais liberdade de horários, uma fonte de renda extra verdadeira e um propósito que transforma vidas com saúde natural, existe um lugar acolhedor esperando por você.
+                </p>
+                <p class="invite-promise">
+                  💗 Você não vai começar sozinha: eu te acompanho em cada passo.
+                </p>
+                <p class="invite-note">
+                  Com apoio próximo, treinamentos simples e uma rotina que respeita o seu tempo e a sua família, você aprende do zero e cresce com segurança.
+                </p>
+
+                <div class="invite-actions">
+                  <a
+                    id="whatsapp-invite-btn"
+                    class="btn-whatsapp"
+                    href="https://wa.me/5543986703070"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-wa-section="empreender"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.07c-.24.68-1.41 1.3-1.95 1.38-.49.07-1.11.1-1.79-.12-.41-.13-.95-.31-1.63-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38.01.55.02.18.01.41-.07.65.49.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.69-.17 1.37z" />
+                    </svg>
+                    <span>Quero empreender com você</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Seção de 4 benefícios em cards -->
+      <section class="section reveal" id="beneficios" aria-labelledby="titulo-beneficios">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">✨ O que torna essa oportunidade única</span>
+            <h2 class="section-title" id="titulo-beneficios">Benefícios de caminhar com a nossa equipe</h2>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <div class="benefit-icon" aria-hidden="true">🌿</div>
+              <h3 class="benefit-title">Produtos de qualidade</h3>
+              <p class="benefit-text">
+                Óleos essenciais 100% puros, com padrão rigoroso de pureza e amados no mundo inteiro pelo bem-estar real que entregam no dia a dia.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="benefit-icon" aria-hidden="true">🏡</div>
+              <h3 class="benefit-title">Negócio de casa</h3>
+              <p class="benefit-text">
+                Trabalhe pelo celular no conforto do seu lar, conciliando sua rotina, sua família e seus horários com total flexibilidade.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="benefit-icon" aria-hidden="true">💰</div>
+              <h3 class="benefit-title">Renda extra</h3>
+              <p class="benefit-text">
+                Construa ganhos extras reais desde os primeiros meses, com comissões atrativas, bônus mensais e plano de crescimento contínuo.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="benefit-icon" aria-hidden="true">🤝</div>
+              <h3 class="benefit-title">Equipe e apoio</h3>
+              <p class="benefit-text">
+                Você conta com treinamentos práticos, materiais de divulgação prontos e uma comunidade feminina acolhedora torcendo por você.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Seção "Como começar?" com 3 passos numerados -->
+      <section class="section reveal" id="como-comecar" aria-labelledby="titulo-como-comecar">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">🎄 Simples, claro e acolhedor</span>
+            <h2 class="section-title" id="titulo-como-comecar">Como começar?</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-number">1</div>
+              <h3 class="step-title">Me chame no WhatsApp</h3>
+              <p class="step-text">
+                Conversamos de forma leve para eu entender o seu momento, tirar todas as suas dúvidas e explicar como o projeto funciona.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">2</div>
+              <h3 class="step-title">Escolha seu kit inicial</h3>
+              <p class="step-text">
+                Você seleciona o kit de óleos ideal para viver a experiência na sua casa e começar a compartilhar os benefícios com segurança.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">3</div>
+              <h3 class="step-title">Ative seu plano com meu apoio</h3>
+              <p class="step-text">
+                Receba seu acesso à equipe, nosso guia de primeiros passos e acompanhamento próximo para conquistar suas primeiras metas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Depoimentos de clientes e equipe -->
+      <section class="section reveal" id="depoimentos" aria-labelledby="titulo-depoimentos">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">⭐ Histórias reais de confiança</span>
+            <h2 class="section-title" id="titulo-depoimentos">Quem já caminha comigo recomenda</h2>
+          </div>
+
+          <div class="testimonials-carousel" id="testimonials-carousel" aria-roledescription="carrossel" aria-label="Depoimentos de clientes e consultoras">
+            <div class="testimonials-viewport" id="testimonials-viewport">
+              <div class="testimonials-track" id="testimonials-track">
+                <article class="testimonial-card">
+                  <div>
+                    <div class="testimonial-header">
+                      <div class="testimonial-avatar-wrap">
+                        <div class="testimonial-avatar-inner" id="dep-avatar-wrap-1">
+                          <img
+                            id="dep-photo-1"
+                            src="./src/assets/images/depoimento_mariana_1795129773170.jpg"
+                            alt="Foto de Mariana Ferreira"
+                            referrerpolicy="no-referrer"
+                          />
+                          <div class="img-fallback" aria-hidden="true">MF</div>
+                        </div>
+                      </div>
+                      <div class="testimonial-author">
+                        <h3 class="testimonial-name">Mariana Ferreira</h3>
+                        <p class="testimonial-role">Cliente há 2 anos · Londrina, PR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                  </div>
+                  <p class="testimonial-quote">
+                    “A Odete me orientou desde o primeiro frasco de Lavanda até toda a rotina de sono aqui em casa. Ela explica com paciência, carinho e nunca nos deixa com dúvidas.”
+                  </p>
+                </article>
+
+                <article class="testimonial-card">
+                  <div>
+                    <div class="testimonial-header">
+                      <div class="testimonial-avatar-wrap">
+                        <div class="testimonial-avatar-inner" id="dep-avatar-wrap-2">
+                          <img
+                            id="dep-photo-2"
+                            src="./src/assets/images/depoimento_camila_1795129773967.jpg"
+                            alt="Foto de Camila Rodrigues"
+                            referrerpolicy="no-referrer"
+                          />
+                          <div class="img-fallback" aria-hidden="true">CR</div>
+                        </div>
+                      </div>
+                      <div class="testimonial-author">
+                        <h3 class="testimonial-name">Camila Rodrigues</h3>
+                        <p class="testimonial-role">Empreendedora na equipe · Maringá, PR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                  </div>
+                  <p class="testimonial-quote">
+                    “Comecei do zero trabalhando de casa nos horários livres dos meus filhos. Com o acompanhamento próximo da Odete, fiz minhas primeiras vendas já no primeiro mês.”
+                  </p>
+                </article>
+
+                <article class="testimonial-card">
+                  <div>
+                    <div class="testimonial-header">
+                      <div class="testimonial-avatar-wrap">
+                        <div class="testimonial-avatar-inner" id="dep-avatar-wrap-3">
+                          <img
+                            id="dep-photo-3"
+                            src="./src/assets/images/depoimento_juliana_1795129773248.jpg"
+                            alt="Foto de Juliana Martins"
+                            referrerpolicy="no-referrer"
+                          />
+                          <div class="img-fallback" aria-hidden="true">JM</div>
+                        </div>
+                      </div>
+                      <div class="testimonial-author">
+                        <h3 class="testimonial-name">Juliana Martins</h3>
+                        <p class="testimonial-role">Cliente fiel · Curitiba, PR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                  </div>
+                  <p class="testimonial-quote">
+                    “Atendimento impecável e humano! Recebi meu kit no prazo, com guia personalizado de uso para cada necessidade da minha família. Confiança total na Odete.”
+                  </p>
+                </article>
+
+                <article class="testimonial-card">
+                  <div>
+                    <div class="testimonial-header">
+                      <div class="testimonial-avatar-wrap">
+                        <div class="testimonial-avatar-inner" id="dep-avatar-wrap-4">
+                          <img
+                            id="dep-photo-4"
+                            src="./src/assets/images/depoimento_patricia_1795129773188.jpg"
+                            alt="Foto de Patrícia Almeida"
+                            referrerpolicy="no-referrer"
+                          />
+                          <div class="img-fallback" aria-hidden="true">PA</div>
+                        </div>
+                      </div>
+                      <div class="testimonial-author">
+                        <h3 class="testimonial-name">Patrícia Almeida</h3>
+                        <p class="testimonial-role">Consultora da equipe · Cascavel, PR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.57 5.21 5.75.84-4.16 4.05.98 5.73L10 14.62l-5.14 2.71.98-5.73L1.68 7.55l5.75-.84L10 1.5z"/></svg>
+                  </div>
+                  <p class="testimonial-quote">
+                    “Eu tinha receio de empreender sozinha, mas a equipe da Odete tem treinamentos prontos e apoio diário no WhatsApp. Hoje tenho renda extra todo mês.”
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="carousel-controls">
+              <button type="button" class="carousel-btn" id="carousel-prev" aria-label="Depoimento anterior">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Selecionar depoimento"></div>
+              <button type="button" class="carousel-btn" id="carousel-next" aria-label="Próximo depoimento">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Dúvidas Frequentes -->
+      <section class="section reveal" id="duvidas" aria-labelledby="titulo-duvidas">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">💬 Respostas rápidas e transparentes</span>
+            <h2 class="section-title" id="titulo-duvidas">Dúvidas Frequentes</h2>
+          </div>
+
+          <div class="faq-list" id="faq-list">
+            <article class="faq-item is-open">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-btn-1"
+                  aria-expanded="true"
+                  aria-controls="faq-panel-1"
+                >
+                  <span>O que são os óleos essenciais doTERRA e por que são tão puros?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                Os óleos essenciais doTERRA são extratos naturais altamente concentrados obtidos de plantas cultivadas em seu habitat ideal. Cada lote passa pelo rigoroso padrão de pureza CPTG (Certificado de Pureza Testada e Garantida), sem adição de fragrâncias sintéticas, conservantes ou enchimentos.
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-btn-2"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-2"
+                >
+                  <span>Como usar os óleos essenciais no dia a dia com segurança?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+                As formas mais práticas são o uso aromático (no difusor ultrassônico ou inalando diretamente das mãos) e o uso tópico (diluído em óleo de coco fracionado sobre pulsos, têmporas ou planta dos pés). Ao adquirir comigo, você recebe orientação personalizada para a rotina da sua família.
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-btn-3"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-3"
+                >
+                  <span>Preciso ter experiência com vendas para empreender na doTERRA?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+                Não. A maioria das pessoas da nossa equipe começou do zero. Você recebe treinamentos simples, materiais prontos para compartilhar pelo WhatsApp e Instagram e meu acompanhamento próximo em cada etapa para aprender na prática.
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-btn-4"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-4"
+                >
+                  <span>Consigo trabalhar de casa e conciliar com minha rotina atual?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+                Sim! O modelo foi pensado para dar flexibilidade. Você pode começar dedicando poucas horas por dia pelo celular, no conforto da sua casa, conciliando com filhos, estudos ou outro trabalho e crescendo no seu próprio ritmo.
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <h3>
+                <button
+                  type="button"
+                  class="faq-trigger"
+                  id="faq-btn-5"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-5"
+                >
+                  <span>Como começo e qual é o investimento inicial?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+                Você começa escolhendo um kit inicial com os óleos essenciais que você mesma vai usar em casa e apresentar para as primeiras clientes, com opção de parcelamento. Me chame no WhatsApp que eu te mostro as opções de kits e qual faz mais sentido para o seu momento.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Referências em vídeo -->
+      <section class="section reveal" id="referencias-video" aria-labelledby="titulo-referencias-video">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-kicker">🎥 Reconhecimento real em vídeo</span>
+            <h2 class="section-title" id="titulo-referencias-video">O que dizem sobre a Odete Kliemann</h2>
+          </div>
+
+          <div class="videos-grid">
+            <article class="video-card">
+              <div class="video-frame">
+                <video
+                  id="ref-video-1"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  aria-label="Depoimento em vídeo de colega da doTERRA elogiando Odete Kliemann"
+                >
+                  <source src="./assets/aistudio/odete_1_dca551ea.mov" type="video/mp4" />
+                  <source src="./assets/aistudio/odete_1_dca551ea.mov" />
+                  Seu navegador não suporta a reprodução deste vídeo.
+                </video>
+              </div>
+              <div class="video-caption">
+                <h3 class="video-title">Parceria reconhecida no Paraná</h3>
+                <p class="video-quote">
+                  “Pra minha colega Odete da doTERRA lá do Paraná, você é fera, um abraço!”
+                </p>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <div class="video-frame">
+                <video
+                  id="ref-video-2"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  aria-label="Depoimento em vídeo destacando a consultora Odete Kliemann"
+                >
+                  <source src="./assets/aistudio/odete_60dc28db.mov" type="video/mp4" />
+                  <source src="./assets/aistudio/odete_60dc28db.mov" />
+                  Seu navegador não suporta a reprodução deste vídeo.
+                </video>
+              </div>
+              <div class="video-caption">
+                <h3 class="video-title">Referência como consultora</h3>
+                <p class="video-quote">
+                  “Aquela consultora Odete Kliemann é espetacular! Queria no meu time!”
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Bloco de contato -->
+      <section class="section reveal" id="contato" aria-labelledby="titulo-contato">
+        <div class="container">
+          <div class="contact-panel">
+            <div class="contact-holiday-row" aria-hidden="true">❄️ 🎄 🎀</div>
+            <h2 class="contact-title" id="titulo-contato">Vamos conversar sobre o seu recomeço?</h2>
+            <p class="contact-subtitle">
+              Fale diretamente comigo pelo WhatsApp. Será um prazer tirar suas dúvidas e te apresentar o universo doTERRA.
+            </p>
+            <div class="contact-phone-display" id="phone-display">(43) 98670-3070</div>
+            <div>
+              <a
+                id="whatsapp-contact-btn"
+                class="btn-whatsapp"
+                href="https://wa.me/5543986703070"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-wa-section="contato"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.07c-.24.68-1.41 1.3-1.95 1.38-.49.07-1.11.1-1.79-.12-.41-.13-.95-.31-1.63-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38.01.55.02.18.01.41-.07.65.49.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.69-.17 1.37z" />
+                </svg>
+                <span>Chamar no WhatsApp agora</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6. Rodapé com logo do Instagram APENAS como imagem/ícone (não clicável) -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-instagram-badge" aria-label="Perfil do Instagram">
+          <svg
+            class="footer-instagram-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="ig-grad" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#f59e0b" />
+                <stop offset="50%" stop-color="#e91e8c" />
+                <stop offset="100%" stop-color="#7c3aed" />
+              </linearGradient>
+            </defs>
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="url(#ig-grad)" stroke-width="2.1" />
+            <circle cx="12" cy="12" r="4.3" stroke="url(#ig-grad)" stroke-width="2.1" />
+            <circle cx="17.3" cy="6.7" r="1.3" fill="#e91e8c" />
+          </svg>
+          <span class="footer-instagram-text">
+            <span data-consultant-name>Odete Kliemann</span> · <span id="instagram-handle">@doterraemgotas_</span>
+          </span>
+        </div>
+
+        <p class="footer-signature">
+          Com carinho, <strong data-consultant-name>Odete Kliemann</strong> — Consultora Independente doTERRA 🎄
+        </p>
+
+        <div class="footer-zip-wrap">
+          <a
+            id="download-zip-btn"
+            class="footer-zip-download"
+            href="./odete-kliemann-doterra.zip"
+            download="odete-kliemann-doterra.zip"
+          >
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 3v9.5m0 0l-3.5-3.5M10 12.5l3.5-3.5M4 15.5h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>Baixar projeto (.zip)</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        // Configuração centralizada da consultora
+        var CONSULTORA = {
+          nome: "Odete Kliemann",
+          whatsappNumero: "43986703070",
+          whatsappExibicao: "(43) 98670-3070",
+          instagram: "@doterraemgotas_",
+          mensagens: {
+            header: "Oi Odete Kliemann! Quero saber mais sobre os óleos doTERRA 💜",
+            empreender: "Oi Odete Kliemann! Quero empreender com você na doTERRA! 🎄",
+            contato: "Oi Odete Kliemann! Vi sua página e gostaria de tirar uma dúvida sobre a doTERRA ✨"
+          }
+        };
+
+        function buildWhatsappUrl(numero, mensagem) {
+          var digits = String(numero || "").replace(/\D/g, "");
+          var withCountry = digits.indexOf("55") === 0 ? digits : "55" + digits;
+          return "https://wa.me/" + withCountry + "?text=" + encodeURIComponent(mensagem);
+        }
+
+        // Preenche dados dinâmicos da consultora
+        document.querySelectorAll("[data-consultant-name]").forEach(function (el) {
+          el.textContent = CONSULTORA.nome;
+        });
+
+        var phoneEl = document.getElementById("phone-display");
+        if (phoneEl) {
+          phoneEl.textContent = CONSULTORA.whatsappExibicao;
+        }
+
+        var igEl = document.getElementById("instagram-handle");
+        if (igEl) {
+          igEl.textContent = CONSULTORA.instagram;
+        }
+
+        // Aplica links do WhatsApp com mensagens distintas codificadas via encodeURIComponent
+        document.querySelectorAll("a[data-wa-section]").forEach(function (link) {
+          var sec = link.getAttribute("data-wa-section");
+          var msg = CONSULTORA.mensagens[sec] || CONSULTORA.mensagens.header;
+          link.setAttribute("href", buildWhatsappUrl(CONSULTORA.whatsappNumero, msg));
+        });
+
+        // Fallback elegante se alguma imagem não carregar
+        function bindImageFallback(imgId, wrapId) {
+          var img = document.getElementById(imgId);
+          var wrap = document.getElementById(wrapId);
+          if (!img || !wrap) return;
+          img.addEventListener("error", function () {
+            img.style.display = "none";
+            wrap.classList.add("is-broken");
+          });
+        }
+        bindImageFallback("profile-photo", "avatar-wrap");
+        bindImageFallback("main-invite-photo", "invite-photo-wrap");
+        bindImageFallback("dep-photo-1", "dep-avatar-wrap-1");
+        bindImageFallback("dep-photo-2", "dep-avatar-wrap-2");
+        bindImageFallback("dep-photo-3", "dep-avatar-wrap-3");
+        bindImageFallback("dep-photo-4", "dep-avatar-wrap-4");
+
+        // Carrossel responsivo de depoimentos
+        (function initTestimonialsCarousel() {
+          var track = document.getElementById("testimonials-track");
+          var viewport = document.getElementById("testimonials-viewport");
+          var prevBtn = document.getElementById("carousel-prev");
+          var nextBtn = document.getElementById("carousel-next");
+          var dotsWrap = document.getElementById("carousel-dots");
+          if (!track || !viewport || !prevBtn || !nextBtn || !dotsWrap) return;
+
+          var cards = track.querySelectorAll(".testimonial-card");
+          var totalCards = cards.length;
+          var currentIndex = 0;
+          var touchStartX = 0;
+
+          function getCardsPerView() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 640) return 2;
+            return 1;
+          }
+
+          function getMaxIndex() {
+            return Math.max(0, totalCards - getCardsPerView());
+          }
+
+          function renderDots() {
+            var maxIdx = getMaxIndex();
+            dotsWrap.innerHTML = "";
+            for (var i = 0; i <= maxIdx; i++) {
+              (function (idx) {
+                var dot = document.createElement("button");
+                dot.type = "button";
+                dot.className = "carousel-dot" + (idx === currentIndex ? " is-active" : "");
+                dot.setAttribute("aria-label", "Mostrar depoimento " + (idx + 1));
+                dot.setAttribute("aria-pressed", idx === currentIndex ? "true" : "false");
+                dot.addEventListener("click", function () {
+                  goTo(idx);
+                });
+                dotsWrap.appendChild(dot);
+              })(i);
+            }
+          }
+
+          function updateUI() {
+            var perView = getCardsPerView();
+            var maxIdx = getMaxIndex();
+            if (currentIndex > maxIdx) currentIndex = maxIdx;
+            if (currentIndex < 0) currentIndex = 0;
+
+            track.style.transform =
+              "translate3d(calc(-" + currentIndex + " * (100% + var(--card-gap)) / " + perView + "), 0, 0)";
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= maxIdx;
+
+            var dots = dotsWrap.querySelectorAll(".carousel-dot");
+            if (dots.length !== maxIdx + 1) {
+              renderDots();
+            } else {
+              dots.forEach(function (dot, idx) {
+                var active = idx === currentIndex;
+                dot.classList.toggle("is-active", active);
+                dot.setAttribute("aria-pressed", active ? "true" : "false");
+              });
+            }
+          }
+
+          function goTo(index) {
+            currentIndex = index;
+            updateUI();
+          }
+
+          prevBtn.addEventListener("click", function () {
+            goTo(currentIndex - 1);
+          });
+
+          nextBtn.addEventListener("click", function () {
+            goTo(currentIndex + 1);
+          });
+
+          viewport.addEventListener(
+            "touchstart",
+            function (e) {
+              if (e.touches && e.touches.length === 1) {
+                touchStartX = e.touches[0].clientX;
+              }
+            },
+            { passive: true }
+          );
+
+          viewport.addEventListener(
+            "touchend",
+            function (e) {
+              if (!e.changedTouches || e.changedTouches.length !== 1) return;
+              var diff = touchStartX - e.changedTouches[0].clientX;
+              if (Math.abs(diff) > 40) {
+                if (diff > 0) goTo(currentIndex + 1);
+                else goTo(currentIndex - 1);
+              }
+            },
+            { passive: true }
+          );
+
+          window.addEventListener("resize", updateUI);
+          renderDots();
+          updateUI();
+        })();
+
+        // Acordeão de Dúvidas Frequentes
+        (function initFaqAccordion() {
+          var list = document.getElementById("faq-list");
+          if (!list) return;
+          var triggers = list.querySelectorAll(".faq-trigger");
+
+          triggers.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              var isExpanded = btn.getAttribute("aria-expanded") === "true";
+              triggers.forEach(function (otherBtn) {
+                var otherPanelId = otherBtn.getAttribute("aria-controls");
+                var otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+                var otherItem = otherBtn.closest(".faq-item");
+                otherBtn.setAttribute("aria-expanded", "false");
+                if (otherPanel) otherPanel.hidden = true;
+                if (otherItem) otherItem.classList.remove("is-open");
+              });
+
+              if (!isExpanded) {
+                var panelId = btn.getAttribute("aria-controls");
+                var panel = panelId ? document.getElementById(panelId) : null;
+                var item = btn.closest(".faq-item");
+                btn.setAttribute("aria-expanded", "true");
+                if (panel) panel.hidden = false;
+                if (item) item.classList.add("is-open");
+              }
+            });
+          });
+        })();
+
+        // Neve animada suave (respeitando prefers-reduced-motion)
+        var snowLayer = document.getElementById("snow-layer");
+        var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (snowLayer && !reducedMotion) {
+          var totalFlakes = window.innerWidth >= 1024 ? 26 : 16;
+          var colors = ["#ffffff", "#e91e8c", "#c99738"];
+          for (var i = 0; i < totalFlakes; i++) {
+            var flake = document.createElement("span");
+            flake.className = "snowflake";
+            flake.textContent = "❄";
+            var left = (i * (100 / totalFlakes) + (i % 3) * 2.5) % 98;
+            var size = 12 + (i % 4) * 4;
+            var duration = 9 + (i % 5) * 2.4;
+            var delay = -(i * 0.9);
+            var drift = (i % 2 === 0 ? 1 : -1) * (16 + (i % 4) * 8);
+            var opacity = i % 3 === 0 ? 0.85 : 0.42;
+
+            flake.style.left = left.toFixed(1) + "%";
+            flake.style.fontSize = size + "px";
+            flake.style.color = colors[i % colors.length];
+            flake.style.animationDuration = duration.toFixed(1) + "s";
+            flake.style.animationDelay = delay.toFixed(1) + "s";
+            flake.style.setProperty("--flake-drift", drift + "px");
+            flake.style.setProperty("--flake-opacity", opacity.toFixed(2));
+            snowLayer.appendChild(flake);
+          }
+        }
+
+        // Revelação suave ao rolar a página
+        if ("IntersectionObserver" in window && !reducedMotion) {
+          var reveals = document.querySelectorAll(".reveal");
+          reveals.forEach(function (el) {
+            var rect = el.getBoundingClientRect();
+            if (rect.top > window.innerHeight * 0.96) {
+              el.classList.add("is-hidden");
+            }
+          });
+
+          var observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.remove("is-hidden");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12 }
+          );
+
+          reveals.forEach(function (el) {
+            if (el.classList.contains("is-hidden")) {
+              observer.observe(el);
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
